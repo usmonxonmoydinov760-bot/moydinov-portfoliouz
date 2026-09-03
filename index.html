@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moydinov Usmonxon — Graphic Designer</title>
+<meta name="description" content="Moydinov Usmonxon — zamonaviy grafik dizayner portfolio sayti">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+:root{--bg:#07070b;--card:#101019;--line:#ffffff18;--text:#f8f7ff;--muted:#a5a3b2;--p:#8b5cf6;--c:#22d3ee}
+body{font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 75% 5%,#271449 0,transparent 32%),var(--bg);color:var(--text);line-height:1.5}
+a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:20;width:min(1160px,92%);padding:13px 18px;border:1px solid var(--line);background:#0b0b11c9;backdrop-filter:blur(20px);border-radius:18px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:.5px}.logo b{color:var(--p)}nav a{font-size:14px;color:#c9c6d4;margin-left:24px;transition:.2s}nav a:hover{color:#fff}
+.hero{min-height:100vh;padding:150px 0 80px;display:grid;align-items:center;background:radial-gradient(circle at 90% 45%,#4c1d9550,transparent 35%)}
+.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.badge{display:inline-flex;padding:8px 13px;border:1px solid #8b5cf655;background:#8b5cf612;border-radius:999px;color:#cbb9ff;font-size:12px;font-weight:800;margin-bottom:20px}
+h1{font-size:clamp(52px,7vw,88px);line-height:.92;letter-spacing:-5px}.grad{background:linear-gradient(100deg,#fff,#a78bfa 48%,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.heroText{font-size:18px;color:var(--muted);max-width:620px;margin:25px 0}.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:13px;border:1px solid #ffffff20;background:#ffffff09;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-3px);border-color:#8b5cf677}.primary{border:0;background:linear-gradient(100deg,#8b5cf6,#5b21b6)}
+.contactMini{display:flex;gap:24px;margin-top:30px;flex-wrap:wrap;color:#bcb9c7;font-size:14px}.contactMini strong{display:block;color:#fff}
+.heroArt{height:460px;border-radius:32px;border:1px solid #ffffff18;position:relative;overflow:hidden;background:linear-gradient(135deg,#171122,#0c111c)}
+.heroArt:before{content:"";position:absolute;inset:-30%;background:conic-gradient(from 0deg,transparent,#8b5cf655,transparent,#22d3ee44,transparent);animation:spin 9s linear infinite}
+.heroArt:after{content:"MU";position:absolute;inset:0;display:grid;place-items:center;font-size:180px;font-weight:1000;color:#ffffff09}
+.monitor{position:absolute;width:70%;height:58%;right:8%;top:18%;border:8px solid #181823;border-radius:14px;background:linear-gradient(145deg,#111827,#29134c);box-shadow:0 30px 80px #000}
+.screen{position:absolute;inset:15px;border-radius:6px;background:radial-gradient(circle at 65% 40%,#a78bfa,transparent 16%),linear-gradient(135deg,#09090f,#25113e);display:flex;align-items:center;justify-content:center;font-weight:1000;font-size:32px;letter-spacing:2px}
+.laptopGlow{position:absolute;bottom:6%;left:15%;width:70%;height:10px;background:#8b5cf6;filter:blur(20px)}
+@keyframes spin{to{transform:rotate(360deg)}}section{padding:95px 0}.eyebrow{color:#a78bfa;font-size:12px;font-weight:900;letter-spacing:3px}.title{font-size:42px;letter-spacing:-2px;margin:7px 0 35px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px}.aboutCard,.card{background:linear-gradient(145deg,#ffffff0b,#ffffff03);border:1px solid var(--line);border-radius:24px;padding:28px}
+.aboutVisual{min-height:310px;display:grid;place-items:center;background:linear-gradient(145deg,#18112d,#0c1720);overflow:hidden;position:relative}.aboutVisual span{font-size:120px;font-weight:1000;color:#8b5cf630}
+.about p{color:var(--muted);font-size:17px}.stats{display:flex;gap:35px;margin-top:28px;flex-wrap:wrap}.stat b{font-size:30px}.stat small{display:block;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{transition:.3s;min-height:190px}.card:hover{transform:translateY(-7px);box-shadow:0 25px 70px #0008;border-color:#8b5cf655}.card h3{margin:12px 0 7px;font-size:21px}.card p{color:var(--muted)}
+.project{min-height:340px;padding:0;overflow:hidden;position:relative;background:#111}.projectVisual{height:205px;display:grid;place-items:center;font-size:30px;font-weight:1000;letter-spacing:2px;position:relative;overflow:hidden}
+.projectVisual:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#ffffff15;filter:blur(2px);right:-40px;top:-50px}.p1{background:linear-gradient(135deg,#080b18,#31206e)}.p2{background:linear-gradient(135deg,#08191c,#123e45)}.p3{background:linear-gradient(135deg,#180d0d,#602020)}.p4{background:linear-gradient(135deg,#14100b,#654a18)}.p5{background:linear-gradient(135deg,#0d1020,#163b68)}.p6{background:linear-gradient(135deg,#150b20,#4b176c)}
+.projectBody{padding:22px}.tag{display:inline-block;padding:5px 9px;border-radius:99px;background:#ffffff0b;color:#bbb7c8;font-size:11px;margin-right:5px}
+.skills .card{min-height:145px}.contactBox{padding:45px;border-radius:28px;background:linear-gradient(120deg,#1b1032,#0b1922);border:1px solid #ffffff18;display:flex;justify-content:space-between;align-items:center;gap:25px}.contactBox p{color:var(--muted)}
+footer{padding:30px 0;border-top:1px solid #ffffff0c;text-align:center;color:#777582;font-size:13px}
+.reveal{opacity:0;transform:translateY(24px);transition:.75s}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){nav{display:none}.heroGrid,.about{grid-template-columns:1fr}.heroArt{height:330px}.grid{grid-template-columns:1fr 1fr}h1{letter-spacing:-3px}.title{font-size:34px}.contactBox{flex-direction:column;align-items:flex-start}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{padding-top:125px}.heroArt{height:270px}.screen{font-size:22px}.monitor{width:78%;height:54%}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">MU<b>.</b></a>
+  <nav><a href="#about">Men haqimda</a><a href="#services">Xizmatlar</a><a href="#projects">Loyihalar</a><a href="#contact">Aloqa</a></nav>
+  <a class="btn primary" href="https://t.me/Moyd1noof" target="_blank">TG: @Moyd1noof</a>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap heroGrid">
+<div class="reveal">
+<div class="badge">✦ GRAPHIC DESIGNER</div>
+<h1>MOYDINOV<br><span class="grad">USMONXON.</span></h1>
+<p class="heroText">Kreativ g‘oyalarni zamonaviy va premium vizual dizaynga aylantiraman. Brending, SMM, banner va kreativ loyihalar.</p>
+<div class="buttons"><a class="btn primary" href="#projects">Loyihalarni ko‘rish →</a><a class="btn" href="#contact">Men bilan bog‘lanish</a></div>
+<div class="contactMini"><div>Telegram<strong>@Moyd1noof</strong></div><div>Telefon<strong>+998 90 059 89 98</strong></div></div>
+</div>
+<div class="reveal"><div class="heroArt"><div class="monitor"><div class="screen">BETTER<br>DESIGN</div></div><div class="laptopGlow"></div></div></div>
+</div>
+</section>
+
+<section id="about"><div class="wrap reveal"><div class="eyebrow">MEN HAQIMDA</div><div class="title">Dizayn — mening uslubim.</div>
+<div class="about"><div class="aboutCard aboutVisual"><span>MU</span></div><div class="aboutCard"><p>Men grafik dizayner sifatida brendlar uchun e’tiborni tortadigan, zamonaviy va professional vizuallar yarataman. Har bir loyihada g‘oya, kompozitsiya va detallar uyg‘unligiga e’tibor beraman.</p><div class="stats"><div class="stat"><b>1+</b><small>Yil tajriba</small></div><div class="stat"><b>10+</b><small>Loyiha</small></div><div class="stat"><b>4</b><small>Dastur</small></div></div></div></div></div></section>
+
+<section id="services"><div class="wrap reveal"><div class="eyebrow">XIZMATLAR</div><div class="title">Nimalar qila olaman?</div>
+<div class="grid"><div class="card"><div class="eyebrow">01</div><h3>Logo & Branding</h3><p>Brend uchun noyob logo va vizual identika.</p></div><div class="card"><div class="eyebrow">02</div><h3>SMM Design</h3><p>Instagram, Telegram va boshqa tarmoqlar uchun dizayn.</p></div><div class="card"><div class="eyebrow">03</div><h3>Banner & Poster</h3><p>Reklama va tadbirlar uchun kreativ bannerlar.</p></div><div class="card"><div class="eyebrow">04</div><h3>Creative Visual</h3><p>AI va grafik vositalar bilan kreativ kontent.</p></div><div class="card"><div class="eyebrow">05</div><h3>Video Design</h3><p>Video uchun cover, intro va vizual elementlar.</p></div><div class="card"><div class="eyebrow">06</div><h3>UI/UX</h3><p>Web va mobil interfeyslar uchun zamonaviy yechimlar.</p></div></div></div></section>
+
+<section id="projects"><div class="wrap reveal"><div class="eyebrow">PORTFOLIO</div><div class="title">Tanlangan loyihalar.</div>
+<div class="grid">
+<div class="card project"><div class="projectVisual p1">Z Y N O X</div><div class="projectBody"><h3>Gaming Identity</h3><span class="tag">Branding</span><span class="tag">Gaming</span></div></div>
+<div class="card project"><div class="projectVisual p2">SOCIAL<br>MEDIA</div><div class="projectBody"><h3>Social Media Pack</h3><span class="tag">SMM</span><span class="tag">Creative</span></div></div>
+<div class="card project"><div class="projectVisual p3">M</div><div class="projectBody"><h3>Premium Logo</h3><span class="tag">Logo</span><span class="tag">Identity</span></div></div>
+<div class="card project"><div class="projectVisual p4">DREAM<br>BIGGER</div><div class="projectBody"><h3>Poster Design</h3><span class="tag">Poster</span><span class="tag">Art</span></div></div>
+<div class="card project"><div class="projectVisual p5">MOBILE<br>UI</div><div class="projectBody"><h3>Mobile Interface</h3><span class="tag">UI/UX</span><span class="tag">App</span></div></div>
+<div class="card project"><div class="projectVisual p6">FUTURE</div><div class="projectBody"><h3>Creative Campaign</h3><span class="tag">Campaign</span><span class="tag">AI</span></div></div>
+</div></div></section>
+
+<section class="skills"><div class="wrap reveal"><div class="eyebrow">KO‘NIKMALAR</div><div class="title">Dasturlar va yo‘nalishlar.</div><div class="grid">
+<div class="card"><h3>Photoshop</h3><p>Grafik kompozitsiya va retush</p></div><div class="card"><h3>Illustrator</h3><p>Logo va vector design</p></div><div class="card"><h3>After Effects</h3><p>Motion va animatsiya</p></div></div></div></section>
+
+<section id="contact"><div class="wrap reveal"><div class="contactBox"><div><div class="eyebrow">ALOQA</div><div class="title" style="margin-bottom:8px">Loyihangiz bormi?</div><p>Birgalikda kuchli va premium dizayn yaratamiz.</p></div><div class="buttons"><a class="btn primary" href="https://t.me/Moyd1noof" target="_blank">Telegram →</a><a class="btn" href="tel:+998900598998">+998 90 059 89 98</a></div></div></div></section>
+</main>
+<footer>© 2026 Moydinov Usmonxon — Graphic Designer</footer>
+<script>
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
